@@ -1,0 +1,96 @@
+/* Basic site styles with purple background */
+:root{
+	--green:#8fc07f;
+	--purple:#9675b2;
+	--bg:#34576f;
+	--text:#8ab8e1;
+    --invis:#00000000;
+}
+
+@font-face {
+    font-family: "Right Howers Regular";
+    src: url("/fonts/right-howers.regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+.right-howers{
+    font-family: "Right Howers Regular", sans-serif;
+}
+@font-face {
+    font-family: "Crafteds Regular";
+    src: url("/fonts/crafteds.regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+.crafteds{
+    font-family: "Crafteds Regular", sans-serif;
+}
+.wide{
+    letter-spacing: 3px;
+}
+*{box-sizing:border-box;margin:0rem;padding: 1.2rem;}
+html,body{height:100%}
+body{
+	font-family:"Helvetica", sans-serif;
+	background: linear-gradient(90deg,var(--green),var(--purple));
+	color:var(--bg);
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	line-height:0;
+}
+
+.container{
+	max-width:1000px;
+	margin:2rem auto;
+	padding:1.5rem;
+	background:rgba(255,255,255,0.06);
+	border-radius:30px;
+	box-shadow:0 8px 30px rgba(0,0,0,0.25);
+	color:var(--bg);
+}
+
+.h1{
+    color:rgba(140, 213, 100, 0.95);
+    margin-bottom:0.5rem;
+    font-size: 3.5rem;
+    font-weight: normal;
+}
+.h2{
+    color:rgba(13, 126, 37, 0.95);
+    margin-bottom:0.5rem;
+    font-size: 2rem;
+    font-weight: normal;
+}
+.h3{
+    color:rgba(10, 48, 18, 0.95);
+    margin-bottom:0.5rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+.p{
+    color:rgba(255,255,255,0.9);
+    margin-bottom:1rem;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.btn{
+	display:inline-block;
+	padding:0.8rem;
+	background:var(--bg);
+	color:var(--text);
+	border-radius:8px;
+	text-decoration:none;
+	font-weight:600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+.btn:hover{scale:1.1;transition:0.1s ease-in-out}
+
+/* simple responsive layout */
+.row{display:flex;gap:1rem;flex-wrap:wrap}
+.col{flex:1 1 250px}
+
+footer{opacity:0.9;text-align:center;margin-top:2rem;color:rgba(255,255,255,0.75)}
+
+/* Utility */
+.center{display:flex;align-items:center;justify-content:center}
