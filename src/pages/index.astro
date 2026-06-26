@@ -9,67 +9,90 @@ import "/src/styles/global.css";
 		<meta name="generator" content={Astro.generator} />
 		<title>hellooo!</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+		<link rel="icon" type="image/svg+xml" href="icon.svg">
 	</head>
 	<body>
-		<div class="container">
-			<h2 class="right-howers wide h3">Navigation</h2>
-			<a href="/" class="btn">Home</a>
-        	<a href="/about" class="btn" target="_blank">About</a>
-			<a href="#num20" class="btn">Jump to 20</a><br><br>
-		</div>
+		<div class="background">
 
-		<div class="container wide">
-			<h1 class="center h1 crafteds">hey, matthew here.</h1>
-			<h1 class="center h1 crafteds">have a seat</h1>
-		</div>
+			<!-- ----------Navigation---------- -->
+			<header class="navigation">
+				<nav>
+					<a href="/" class="btn" style="background:#104020"><img src="images/pfp.png" width="25"></a>
+	    	    	<a href="#aboutme" class="btn wide qilka-bold">About Me</a>
+					<a href="#projects" class="btn wide qilka-bold">Current Projects</a><br><br>
+				</nav>
+			</header>
+			
+			<!-- ----------Greetings---------- -->
+			<header class="title">
+				<h1 class="crafteds wide" style="margin-top: 8.5rem;">Welcome to the <i>Dream<wbr>hub</i><br></h1>
+				<h2 class="qilka-bold wide" style="margin-top: 2rem; font-size: 20px"> hosted by <span style="color:#00ff00">Your Local 16th Note</span></h2>
+			</header>
 
-		<div class="container">
-			<a href="https://www.youtube.com/@YrLcl16thNt" target="_blank"><i class="fa-brands fa-youtube" style="font-size: 1.5rem; color: #303040;"></i></a>
-		</div>
+			<!-- ------------Content------------ -->
+			<main class="main-content">
 
-		<h1 class="h2">WORK IN PROGRESS</h1>
-		
-		<h2 class="h2">1</h2>
-		<h2 class="h2">2</h2>
-		<h2 class="h2">3</h2>
-		<h2 class="h2">4</h2>
-		<h2 class="h2">5</h2>
-		<h2 class="h2">6</h2>
-		<h2 class="h2">7</h2>
-		<h2 class="h2">8</h2>
-		<h2 class="h2">9</h2>
-		<h2 class="h2">10</h2>
-		<h2 class="h2">11</h2>
-		<h2 class="h2">12</h2>
-		<h2 class="h2">13</h2>
-		<h2 class="h2">14</h2>
-		<h2 class="h2">15</h2>
-		<h2 class="h2">16</h2>
-		<h2 class="h2">17</h2>
-		<h2 class="h2">18</h2>
-		<h2 class="h2">19</h2>
-		<h2 class="h2" id="num20">20</h2>
-		<h2 class="h2">21</h2>
-		<h2 class="h2">22</h2>
-		<h2 class="h2">23</h2>
-		<h2 class="h2">24</h2>
-		<h2 class="h2">25</h2>
-		<h2 class="h2">26</h2>
-		<h2 class="h2">27</h2>
-		<h2 class="h2">28</h2>
-		<h2 class="h2">29</h2>
-		<h2 class="h2">30</h2>
-		<h2 class="h2">31</h2>
-		<h2 class="h2">32</h2>
-		<h2 class="h2">33</h2>
-		<h2 class="h2">34</h2>
-		<h2 class="h2">35</h2>
-		<h2 class="h2">36</h2>
-		<h2 class="h2">37</h2>
-		<h2 class="h2">38</h2>
-		<h2 class="h2">39</h2>
-		<h2 class="h2">40</h2>
+				<!-- ----------Now---------- -->
+				<div>
+					<h3 class="xanmono">now! now! now!</h3>
+						<p class="qilka-bold" style="margin-left: 40px">working on this website!</p>
+						<ul class="qilka-bold" style="margin-left: 40px">
+							
+						</ul>
+				</div>
 
-		<h3 class="h3">end of page :p</h3>
+				<!-- ----------Current Projects--------- -->
+				<div>
+					<h3 class="xanmono" id="projects">current amalgamations:</h3>
+						<p class="qilka-bold" style="margin-left: 40px">this is where i show off what im working on.</p>
+						<ul class="qilka-bold" style="margin-left: 40px">
+							<li>this website</li>
+							<li>a game IF I ACTUALLY MADE ONE YET</li>
+						</ul>
+				</div>
+
+				<!-- ----------Music--------- -->
+				<div>
+					<h3 class="xanmono">orchestrated sound:</h3>
+						<p class="qilka-bold" style="margin-left: 40px">all sites with my music</p>
+						<ul class="qilka-bold" style="margin-left: 40px">
+							<li>bandcamp link</li>
+							<li>soundcloud link</li>
+						</ul>
+				</div>
+
+				<!-- ----------Photos--------- -->
+				<div>
+					<h3 class="xanmono">photographic film:</h3>
+						<p class="qilka-bold" style="margin-left: 40px">imagine for a moment that this is a dropdown</p>
+						<ul class="qilka-bold" style="margin-left: 40px">
+							<li class="qilka-bold">pretty flower</li>
+							<li class="qilka-bold">pretty people</li>
+							<li class="qilka-bold">random thing</li>							
+						</ul>
+				</div>
+
+				<!-- ----------Who Am I--------- -->
+					<h3 class="xanmono" id="aboutme">who the heck am i?</h3>
+						<p class="qilka-bold" style="margin-left: 40px"> get to know me a little.</p>
+						<ul class="qilka-bold" style="margin-left: 40px">
+							<li>im a guy with too much imagination and not enough energy</li>
+							<li>im korean american</li>
+							<li>i love games, especially undertale/deltarune, minecraft, celeste, hollow knight, vivid/stasis, omori, unbeatable, one shot, ddlc, bad end theater, and more but i cant remember anymore</li>
+							<li>my favorite artists are toby fox, jamie paige, ado, lena raine, lexycat, camellia, flavor foley, kessoku band, eve, yorushika, and kasane teto. i like GUMI Megpoid a very normal amount :P</li>
+						</ul>
+
+				<!-- ----------Other Contacts---------- -->
+				<div>
+					<h3 class="xanmono">various methods of comms:</h3>
+						<a class="btn" href="https://www.youtube.com/@thematthattar" target="_blank"><i class="fa-brands fa-youtube" style="font-size: 2rem; color: #303040;"></i></a>
+						<p class="qilka-bold">twitter,reddit,linkdin(x),bluesky,instagram,email</p>
+				</div>
+
+			<!-- ----------Footer---------- -->
+			<footer>
+				<h3 class="h3 crafteds text">end of page :p</h3>
+			</footer>
+		</main>
 	</body>
 </html>

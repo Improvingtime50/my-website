@@ -1,83 +1,161 @@
-/* Basic site styles with purple background */
-:root{
-	--green:#8fc07f;
-	--purple:#9675b2;
-	--bg:#34576f;
-	--text:#8ab8e1;
-    --invis:#00000000;
+/* !----------Colors---------- */
+    :root{
+    	--text:#5d7a72;
+        --invis:#00000000;
+        --h1:rgba(107, 135, 92, 0.95);
+        --h2:rgba(66, 94, 72, 0.95);
+        --h3:rgba(41, 69, 87, 0.95);
+    }
+
+    @property --green {
+      syntax: '<color>';
+      inherits: false;
+      initial-value: #85d36b;
+    }
+    @property --blue {
+      syntax: '<color>';
+      inherits: false;
+      initial-value: #6faade;
+    }
+    @property --purple {
+      syntax: '<color>';
+      inherits: false;
+      initial-value: #a168cf;
+    }
+
+/* !----------Fonts---------- */
+    @font-face {
+        font-family: "Crafteds Regular";
+        src: url("/fonts/crafteds.regular.woff2") format("woff2");
+        font-weight: normal;
+        font-style: normal;
+    }
+    .crafteds{
+        font-family: "Crafteds Regular", sans-serif;
+    }
+    @font-face {
+        font-family: "Qilka Bold";
+        src: url("/fonts/qilka.bold.woff2") format("woff2");
+        font-weight: bold;
+        font-style: normal;
+    }
+    .qilka-bold{
+        font-family: "Qilka Bold", sans-serif;
+    }
+    @font-face {
+        font-family: "Xanmono Regular";
+        src: url("/fonts/xanmono.regular.woff2") format("woff2");
+        font-weight: normal;
+        font-style: normal;
+    }
+    .xanmono{
+        font-family: "Xanmono Regular", sans-serif;
+    }
+
+/* ----------Background---------- */
+    *{
+        margin:0rem;
+        padding:0rem;
+        box-sizing:border-box;
+    }
+    body{
+        height:100vh;
+        width:100vw;
+    	-webkit-font-smoothing:antialiased;
+    	-moz-osx-font-smoothing:grayscale;
+    	line-height: 0.5rem;
+        font-family:"Helvetica", sans-serif;
+    }
+
+    /* ----------Back Background---------- */
+        .background{
+            min-height:100vh;
+            background-image: linear-gradient(90deg,var(--green),var(--blue),var(--purple));
+            background-size: 300% 100%;    
+            animation: bgAnimation 12s ease-in-out infinite;
+            display:flex;
+            flex-direction:column;
+        }
+        .title{
+            padding: 3rem 1rem;
+            text-align:center;
+        }
+    /* ----------Front Background---------- */
+        .navigation{
+            position: fixed;
+            flex-grow: 0;
+            padding: 1rem 2rem;
+            background: #ffffff80;
+            border-radius: 0 0 24px 24px;
+            display:flex;
+            flex-direction:column;
+        }
+        .main-content{
+            flex-grow: 1;
+            padding: 2rem 3rem;
+            background: #ffffffa0;
+            border-radius: 24px 24px 0 0;
+            display:flex;
+            flex-direction:column;
+            align-items:left;
+        }
+
+
+@keyframes bgAnimation {
+    0%, 100% {
+        --green: #bcd5b4;
+        --blue: #8ab8e1;
+        --purple: #c1b5cb;
+    }
+    33% {
+        --green: #8ab8e1;
+        --blue: #c1b5cb;
+        --purple: #bcd5b4;
+    }
+    66% {
+        --green: #c1b5cb;
+        --blue: #bcd5b4;
+        --purple: #8ab8e1;
+    }
 }
 
-@font-face {
-    font-family: "Right Howers Regular";
-    src: url("/fonts/right-howers.regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-.right-howers{
-    font-family: "Right Howers Regular", sans-serif;
-}
-@font-face {
-    font-family: "Crafteds Regular";
-    src: url("/fonts/crafteds.regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-.crafteds{
-    font-family: "Crafteds Regular", sans-serif;
-}
-.wide{
-    letter-spacing: 3px;
-}
-*{box-sizing:border-box;margin:0rem;padding: 1.2rem;}
-html,body{height:100%}
-body{
-	font-family:"Helvetica", sans-serif;
-	background: linear-gradient(90deg,var(--green),var(--purple));
-	color:var(--bg);
-	-webkit-font-smoothing:antialiased;
-	-moz-osx-font-smoothing:grayscale;
-	line-height:0;
-}
-
-.container{
-	max-width:1000px;
-	margin:2rem auto;
-	padding:1.5rem;
-	background:rgba(255,255,255,0.06);
-	border-radius:30px;
-	box-shadow:0 8px 30px rgba(0,0,0,0.25);
-	color:var(--bg);
-}
-
-.h1{
-    color:rgba(140, 213, 100, 0.95);
-    margin-bottom:0.5rem;
+/* ----------Typography---------- */
+h1{
+    color:var(--h1);
+    margin-top:0.5rem;
     font-size: 3.5rem;
-    font-weight: normal;
+    line-height: 3.5rem;
+    font-weight: bold;
 }
-.h2{
-    color:rgba(13, 126, 37, 0.95);
-    margin-bottom:0.5rem;
+h2{
+    color:var(--h2);
+    margin-top:0.5rem;
     font-size: 2rem;
+    line-height: 2rem;
     font-weight: normal;
 }
-.h3{
-    color:rgba(10, 48, 18, 0.95);
+h3{
+    color:var(--h3);
+    margin-top:0.5rem;
     margin-bottom:0.5rem;
     font-size: 1.5rem;
+    line-height: 1.5rem;
     font-weight: normal;
 }
-.p{
-    color:rgba(255,255,255,0.9);
-    margin-bottom:1rem;
+p, li{
+    color:var(--text);
+    margin-top:0.5rem;
     font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: normal;
 }
 
+/* ----------Buttons---------- */
 .btn{
 	display:inline-block;
-	padding:0.8rem;
-	background:var(--bg);
+    margin:0.5rem 0.5rem 0.5rem 0.5rem;
+	padding:1rem;
+	background:#ffffffb0;
 	color:var(--text);
 	border-radius:8px;
 	text-decoration:none;
@@ -86,11 +164,8 @@ body{
 }
 .btn:hover{scale:1.1;transition:0.1s ease-in-out}
 
-/* simple responsive layout */
-.row{display:flex;gap:1rem;flex-wrap:wrap}
-.col{flex:1 1 250px}
-
-footer{opacity:0.9;text-align:center;margin-top:2rem;color:rgba(255,255,255,0.75)}
-
-/* Utility */
-.center{display:flex;align-items:center;justify-content:center}
+/* ----------Images---------- */
+img {
+    max-width: 100%;
+    height:auto;
+}
