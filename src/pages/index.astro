@@ -18,8 +18,11 @@ import "/src/styles/global.css";
 			<header class="navigation">
 				<nav>
 					<a href="/" class="btn" style="background:#104020"><img src="images/pfp.png" width="25"></a>
-	    	    	<a href="#aboutme" class="btn wide qilka-bold">About Me</a>
-					<a href="#projects" class="btn wide qilka-bold">Current Projects</a><br><br>
+	    	    	<a href="#now" class="btn wide qilka-bold">In the Works</a>
+					<a href="#proj" class="btn wide qilka-bold">Projects</a>
+					<a href="#mus" class="btn wide qilka-bold">Music</a>
+					<a href="#img" class="btn wide qilka-bold">Photos</a>
+					<a href="#abt" class="btn wide qilka-bold">About Me</a>
 				</nav>
 			</header>
 			
@@ -33,47 +36,39 @@ import "/src/styles/global.css";
 			<main class="main-content">
 
 				<!-- ----------Now---------- -->
-				<div>
-					<h3 class="xanmono">now! now! now!</h3>
+					<h3 class="xanmono" id="now">now! now! now!</h3>
 						<p class="qilka-bold" style="margin-left: 40px">working on this website!</p>
 						<ul class="qilka-bold" style="margin-left: 40px">
 							
 						</ul>
-				</div>
 
 				<!-- ----------Current Projects--------- -->
-				<div>
-					<h3 class="xanmono" id="projects">current amalgamations:</h3>
+					<h3 class="xanmono" id="proj">amalgamations:</h3>
 						<p class="qilka-bold" style="margin-left: 40px">this is where i show off what im working on.</p>
 						<ul class="qilka-bold" style="margin-left: 40px">
 							<li>this website</li>
 							<li>a game IF I ACTUALLY MADE ONE YET</li>
 						</ul>
-				</div>
 
 				<!-- ----------Music--------- -->
-				<div>
-					<h3 class="xanmono">orchestrated sound:</h3>
+					<h3 class="xanmono" id="mus">orchestrated sound:</h3>
 						<p class="qilka-bold" style="margin-left: 40px">all sites with my music</p>
 						<ul class="qilka-bold" style="margin-left: 40px">
 							<li>bandcamp link</li>
 							<li>soundcloud link</li>
 						</ul>
-				</div>
 
 				<!-- ----------Photos--------- -->
-				<div>
-					<h3 class="xanmono">photographic film:</h3>
+					<h3 class="xanmono" id="img">photographic film:</h3>
 						<p class="qilka-bold" style="margin-left: 40px">imagine for a moment that this is a dropdown</p>
 						<ul class="qilka-bold" style="margin-left: 40px">
 							<li class="qilka-bold">pretty flower</li>
 							<li class="qilka-bold">pretty people</li>
 							<li class="qilka-bold">random thing</li>							
 						</ul>
-				</div>
 
 				<!-- ----------Who Am I--------- -->
-					<h3 class="xanmono" id="aboutme">who the heck am i?</h3>
+					<h3 class="xanmono" id="abt">who the heck am i?</h3>
 						<p class="qilka-bold" style="margin-left: 40px"> get to know me a little.</p>
 						<ul class="qilka-bold" style="margin-left: 40px">
 							<li>im a guy with too much imagination and not enough energy</li>
@@ -84,14 +79,47 @@ import "/src/styles/global.css";
 
 				<!-- ----------Other Contacts---------- -->
 				<div>
-					<h3 class="xanmono">various methods of comms:</h3>
-						<a class="btn" href="https://www.youtube.com/@thematthattar" target="_blank"><i class="fa-brands fa-youtube" style="font-size: 2rem; color: #303040;"></i></a>
+						
 						<p class="qilka-bold">twitter,reddit,linkdin(x),bluesky,instagram,email</p>
 				</div>
 
 			<!-- ----------Footer---------- -->
-			<footer>
-				<h3 class="h3 crafteds text">end of page :p</h3>
+			<footer class="footer">
+  				<div class="footer-container">
+				    <div class="footer-col">
+				    	<h3 class="xanmono">Matthew Kang</h3>
+				    	<p class="qilka-bold">finding my through the world and the internet</p>
+				    </div>
+				
+				    <div class="footer-col">
+				      	<h3 class="xanmono">Quick Links</h3>
+				      	<ul class="qilka-bold">
+				        	<li><a href="#now" style="color:var(--text)">In the Works</a></li>
+							<li><a href="#proj" style="color:var(--text)">Projects</a></li>
+							<li><a href="#mus" style="color:var(--text)">Music</a></li>
+							<li><a href="#img" style="color:var(--text)">Photos</a></li>
+							<li><a href="#abt" style="color:var(--text)">About Me</a></li>
+				      	</ul>
+				    </div>
+				
+				    <div class="footer-col">
+				      	<h3 class="xanmono" id="comm">various methods of comms:</h3>
+				      	<div class="social-links">
+							<a href="https://www.youtube.com/@thematthattar" target="_blank">
+								<i class="fa-brands fa-youtube" style="font-size: 2rem; color: var(--text);"></i>
+							</a>
+				        	<a href="https://bsky.app/profile/the-matt-hattar.bsky.social" target="_blank">
+								<i class="fa-brands fa-bluesky" style="font-size: 2rem; color: var(--text);"></i>
+							</a>
+				        	<a href="#">LinkedIn</a>
+				        	<a href="#">GitHub</a>
+				    	</div>
+					</div>
+				</div>
+
+				<div class="footer-bottom">
+				    <p>&copy; 2026 BrandName. All rights reserved.</p>
+				</div>
 			</footer>
 		</main>
 	</body>
