@@ -213,7 +213,7 @@ h3{
     font-size: 1.5rem;
     line-height: 1.5rem;
     font-weight: normal;
-    scroll-margin-top: 180px;
+    scroll-margin-top: 250px;
 }
 p, li{
     color:var(--text);
