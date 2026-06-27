@@ -2,127 +2,252 @@
 import "/src/styles/global.css";
 ---
 
+<!-- HTML Setup -->
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
 		<title>hellooo!</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-		<link rel="icon" type="image/svg+xml" href="icon.svg">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+		/>
+		<link rel="icon" type="image/svg+xml" href="../images/icon.svg" />
 	</head>
+	<!-- Main Page -->
 	<body>
 		<div class="background">
-
-			<!-- ----------Navigation---------- -->
+			<!-- Navigation -->
 			<header class="navigation">
 				<nav>
-					<a href="/" class="btn" style="background:#104020"><img src="images/pfp.png" width="25"></a>
-	    	    	<a href="#now" class="btn wide qilka-bold">In the Works</a>
-					<a href="#proj" class="btn wide qilka-bold">Projects</a>
-					<a href="#mus" class="btn wide qilka-bold">Music</a>
-					<a href="#img" class="btn wide qilka-bold">Photos</a>
-					<a href="#abt" class="btn wide qilka-bold">About Me</a>
+					<a href="/"style="background:#142"
+						><img src="../images/pfp.png" width="25" /></a
+					>
+					<a href="#now" class="wide qilka-bold">In the Works</a>
+					<a href="#proj" class="wide qilka-bold">Projects</a>
+					<a href="#mus" class="wide qilka-bold">Music</a>
+					<a href="#img" class="wide qilka-bold">Photos</a>
+					<a href="#abt" class="wide qilka-bold">About Me</a>
 				</nav>
 			</header>
-			
-			<!-- ----------Greetings---------- -->
+
+			<!-- Greetings -->
 			<header class="title">
-				<h1 class="crafteds wide" style="margin-top: 200px;">Welcome to the <i>Dream<wbr>hub</i><br></h1>
-				<h2 class="qilka-bold wide" style="margin-top: 2rem; font-size: 20px"> hosted by <span style="color:#00ff00">Your Local 16th Note</span></h2>
+				<h1 class="crafteds wide" style="margin-top: 200px;">
+					Welcome to<br /><i class="fancy">THE MATT HATTAR</i><br />
+				</h1>
+				<h2
+					class="qilka-bold wide"
+					style="margin-top: 2rem; font-size: 20px"
+				>
+					hosted by <span style="color:#142"
+						>yours truly (>vO)&deg;</span
+					>
+				</h2>
 			</header>
 
-			<!-- ------------Content------------ -->
+			<!-- --Content-- -->
 			<main class="main-content">
+				<!-- Now -->
+				<h3 class="xanmono container" id="now">now! now! now!</h3>
+				<p class="qilka-bold" style="margin-left: 20px">
+					this is where i update you all on what im working on. (updates may vary from 2 milliseconds to 500 months)
+				</p>
+				<ul class="qilka-bold" style="margin-left: 40px">
+					<li>working on this website! (image as of 6/26/2026)</li>
+					<img src="../images/now.png">
+				</ul>
 
-				<!-- ----------Now---------- -->
-					<h3 class="xanmono" id="now">now! now! now!</h3>
-						<p class="qilka-bold" style="margin-left: 40px">working on this website!</p>
-						<ul class="qilka-bold" style="margin-left: 40px">
-							
-						</ul>
+				<!-- Current Projects -->
+				<h3 class="xanmono container" id="proj">
+					digital amalgamations:
+				</h3>
+				<p class="qilka-bold" style="margin-left: 20px">
+					this is where i show off my online projects.
+				</p>
+				<ul class="qilka-bold" style="margin-left: 40px">
+					<li>this website (duh)</li>
+					<li>a game IF I ACTUALLY MADE ONE YET</li>
 
-				<!-- ----------Current Projects--------- -->
-					<h3 class="xanmono" id="proj">digital amalgamations:</h3>
-						<p class="qilka-bold" style="margin-left: 40px">this is where i show off what im working on.</p>
-						<ul class="qilka-bold" style="margin-left: 40px">
-							<li>this website</li>
-							<li>a game IF I ACTUALLY MADE ONE YET</li>
-						</ul>
+				</ul>
 
-				<!-- ----------Music--------- -->
-					<h3 class="xanmono" id="mus">orchestrated sound:</h3>
-						<p class="qilka-bold" style="margin-left: 40px">all sites with my music</p>
-						<ul class="qilka-bold" style="margin-left: 40px">
-							<li>bandcamp link</li>
-							<li>soundcloud link</li>
-						</ul>
-
-				<!-- ----------Photos--------- -->
-					<h3 class="xanmono" id="img">photographic... photos:</h3>
-						<p class="qilka-bold" style="margin-left: 40px">imagine for a moment that this is a dropdown</p>
-						<ul class="qilka-bold" style="margin-left: 40px">
-							<li class="qilka-bold">pretty flower</li>
-							<li class="qilka-bold">pretty people</li>
-							<li class="qilka-bold">random thing</li>							
-						</ul>
-
-				<!-- ----------Who Am I--------- -->
-					<h3 class="xanmono" id="abt">who the heck am i?</h3>
-						<p class="qilka-bold" style="margin-left: 40px"> get to know me a little.</p>
-						<ul class="qilka-bold" style="margin-left: 40px">
-							<li>im a guy with too much imagination and not enough energy</li>
-							<li>im korean american</li>
-							<li>i love games, especially undertale/deltarune, minecraft, celeste, hollow knight, vivid/stasis, omori, unbeatable, one shot, ddlc, bad end theater, and more but i cant remember anymore</li>
-							<li>my favorite artists are toby fox, jamie paige, ado, lena raine, lexycat, camellia, flavor foley, kessoku band, eve, yorushika, and kasane teto. i like GUMI Megpoid a very normal amount :P</li>
-						</ul>
-
-
-			<!-- ----------Footer---------- -->
-			<footer class="footer" style="margin-top: 3rem">
-  				<div class="footer-container">
-				    <div class="footer-col">
-				    	<h3 class="xanmono">Matthew Kang</h3>
-				    	<p class="qilka-bold">finding my through the world and the internet</p>
-				    </div>
-				
-				    <div class="footer-col">
-				      	<h3 class="xanmono">Quik Linx</h3>
-				      	<ul class="qilka-bold">
-				        	<li><a href="#now" style="color:var(--text)">In the Works</a></li>
-							<li><a href="#proj" style="color:var(--text)">Projects</a></li>
-							<li><a href="#mus" style="color:var(--text)">Music</a></li>
-							<li><a href="#img" style="color:var(--text)">Photos</a></li>
-							<li><a href="#abt" style="color:var(--text)">About Me</a></li>
-				      	</ul>
-				    </div>
-				
-				    <div class="footer-col">
-				      	<h3 class="xanmono" id="comm">contax:</h3>
-				      	<div class="social-links">
-							<a href="https://www.youtube.com/@thematthattar" target="_blank">
-								<i class="fa-brands fa-youtube" style="font-size: 2rem; color: var(--text);"></i>
-							</a>
-							<a href="#" onclick="this.href='mailto:' + 'mehonbcats' + '@' + 'gmail.com'" target="_blank">
-								<i class="fa-solid fa-at" style="font-size: 2rem; color: var(--text);"></i>
-							</a>
-							<a href="https://www.instagram.com/the.matt.hattar.again/" target="_blank">
-								<i class="fa-brands fa-instagram" style="font-size: 2rem; color: var(--text);"></i>
-							</a>
-				        	<a href="https://bsky.app/profile/the-matt-hattar.bsky.social" target="_blank">
-								<i class="fa-brands fa-bluesky" style="font-size: 2rem; color: var(--text);"></i>
-							</a>
-				        	<a href="#" target="_blank">
-								<i class="fa-brands fa-square-linkedin" style="font-size: 2rem; color: var(--text);"> </i>
-							</a>
-				    	</div>
+				<!-- Music -->
+				<h3 class="xanmono container" id="mus">orchestrated frequencies:</h3>
+				<div class="qilka-bold" style="margin-left: 20px">
+					<p>
+						all sites with my music (none published yet, but i will
+						try)
+					</p>
+					<div style="margin-left: 20px">
+						<a
+							href="https://bandcamp.com/nite_meh"
+							target="_blank"
+							style="background:turquoise"
+						>
+							<i
+								class="fa-brands fa-bandcamp"
+								style="font-size: 2rem; color:#404040;"></i>
+						</a>
+						<a
+							href="https://soundcloud.com/the-matt-hattar"
+							target="_blank"
+							style="background:orangered"
+						>
+							<i
+								class="fa-brands fa-soundcloud"
+								style="font-size: 2rem; color:#404040;"></i>
+						</a>
 					</div>
 				</div>
 
-				<div class="footer-bottom">
-				    <p class="qilka-bold">&copy; 2026 Matthew Kang. All rights reserved.</p>
+				<!-- Photos -->
+				<h3 class="xanmono container" id="img">
+					photographic... photos:
+				</h3>
+				<div class="qilka-bold" style="margin-left: 40px">
+					<p>this is where i showcase any random photos i might post. <br>
+					there are more photos in my <a href="https://www.instagram.com/the.matt.hattar.photos/" target="_blank">instagram!</a></p>
+					
 				</div>
-			</footer>
-		</main>
+
+				<!-- Who Am I -->
+				<h3 class="xanmono container" id="abt">who the heck am i?</h3>
+				<div class="qilka-bold" style="margin-left: 40px">
+					<p style="margin-left: -20px">get to know me a little.</p>
+					<ul>
+						<li>im korean american</li>
+						<li>
+							i love games, especially undertale/deltarune,
+							minecraft, celeste, vivid/stasis, unbeatable, and more (but these are my favorites)
+						</li>
+						<li>im a huge fan of jpop, and vocaloid/synthv</li>
+						<li>
+							my favorite artists are toby fox, jamie paige, ado,
+							lena raine, lexycat, camellia, flavor foley, kessoku
+							band, eve, yorushika, and kasane teto. i like GUMI
+							Megpoid a very normal amount :P
+						</li>
+					</ul>
+				</div>
+
+				<!-- Footer -->
+				<footer class="footer" style="margin-top: 3rem">
+					<div class="footer-container">
+						<div class="footer-col">
+							<h3
+								class="xanmono container"
+								,
+								style="font-weight: bold"
+							>
+								Matthew Kang
+							</h3>
+							<p class="qilka-bold">
+								finding my way through the world and the
+								internet
+							</p>
+						</div>
+
+						<div class="footer-col">
+							<h3
+								class="xanmono container"
+								style="font-weight: bold"
+							>
+								Quik Linx
+							</h3>
+							<ul class="qilka-bold">
+								<li>
+									<a href="#now" style="color:var(--text)"
+										>In the Works</a
+									>
+								</li>
+								<li>
+									<a href="#proj" style="color:var(--text)"
+										>Projects</a
+									>
+								</li>
+								<li>
+									<a href="#mus" style="color:var(--text)"
+										>Music</a
+									>
+								</li>
+								<li>
+									<a href="#img" style="color:var(--text)"
+										>Photos</a
+									>
+								</li>
+								<li>
+									<a href="#abt" style="color:var(--text)"
+										>About Me</a
+									>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer-col">
+							<h3
+								class="xanmono container"
+								style="font-weight: bold"
+								id="comm"
+							>
+								contax:
+							</h3>
+							<div class="social-links">
+								<a
+									href="https://www.youtube.com/@thematthattar"
+									target="_blank"
+								>
+									<i
+										class="fa-brands fa-youtube"
+										style="font-size: 2rem; color: var(--text);"
+									></i>
+								</a>
+								<a
+									href="#"
+									onclick="this.href='mailto:' + 'mehonbcats' + '@' + 'gmail.com'"
+									target="_blank"
+								>
+									<i
+										class="fa-solid fa-at"
+										style="font-size: 2rem; color: var(--text);"
+									></i>
+								</a>
+								<a
+									href="https://www.instagram.com/the.matt.hattar.again/"
+									target="_blank"
+								>
+									<i
+										class="fa-brands fa-instagram"
+										style="font-size: 2rem; color: var(--text);"
+									></i>
+								</a>
+								<a
+									href="https://bsky.app/profile/the-matt-hattar.bsky.social"
+									target="_blank"
+								>
+									<i
+										class="fa-brands fa-bluesky"
+										style="font-size: 2rem; color: var(--text);"
+									></i>
+								</a>
+								<a href="#" target="_blank">
+									<i
+										class="fa-brands fa-square-linkedin"
+										style="font-size: 2rem; color: var(--text);"
+									>
+									</i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="footer-bottom">
+						<p class="qilka-bold">
+							&copy; 2026 Matthew Kang. All rights reserved.
+						</p>
+					</div>
+				</footer>
+			</main>
+		</div>
 	</body>
 </html>
