@@ -1,5 +1,8 @@
 ---
 import "/src/styles/global.css";
+import packageJson from "../../package.json";
+
+const version = packageJson.version;
 ---
 
 <!-- HTML Setup -->
@@ -35,7 +38,7 @@ import "/src/styles/global.css";
 			<!-- Greetings -->
 			<header class="title">
 				<h1 class="crafteds wide" style="margin-top: 200px;">
-					Welcome to<br /><i class="fancy">THE MATT HATTAR</i><br />
+					Welcome to<br /><span class="fancy">THE MATT HATTAR</span>
 				</h1>
 				<h2
 					class="qilka-bold wide"
@@ -52,11 +55,10 @@ import "/src/styles/global.css";
 				<!-- Now -->
 				<h3 class="xanmono container" id="now">now! now! now!</h3>
 				<p class="qilka-bold" style="margin-left: 20px">
-					this is where i update you all on what im working on. (updates may vary from 2 milliseconds to 500 months)
+					this is where i update you all on what im working on.
 				</p>
 				<ul class="qilka-bold" style="margin-left: 40px">
-					<li>working on this website! (image as of 6/26/2026)</li>
-					<img src="../images/now.png">
+					<li class="fancy">working on this website!</li>
 				</ul>
 
 				<!-- Current Projects -->
@@ -106,8 +108,7 @@ import "/src/styles/global.css";
 					photographic... photos:
 				</h3>
 				<div class="qilka-bold" style="margin-left: 40px">
-					<p>this is where i showcase any random photos i might post. <br>
-					there are more photos in my <a href="https://www.instagram.com/the.matt.hattar.photos/" target="_blank">instagram!</a></p>
+					<p>check out my <a href="https://www.instagram.com/the.matt.hattar.photos/" target="_blank" style="color: #f4f">instagram</a> for my photography account!</p>
 					
 				</div>
 
@@ -245,6 +246,9 @@ import "/src/styles/global.css";
 						<p class="qilka-bold">
 							&copy; 2026 Matthew Kang. All rights reserved.
 						</p>
+						<p class="qilka-bold">
+							Version {version}
+						<p>
 					</div>
 				</footer>
 			</main>

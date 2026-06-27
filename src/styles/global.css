@@ -1,7 +1,7 @@
 /* Colors */
 :root {
     --text: #5d7a72;
-    --invis: #00000000;
+    --invis: #000000000;
     --h1: rgba(93, 139, 68, 0.95);
     --h2: rgba(48, 97, 59, 0.95);
     --h3: rgba(44, 71, 88, 0.95);
@@ -35,6 +35,18 @@
     syntax: '<color>';
     inherits: false;
     initial-value: #6bd3a8;
+}
+
+@property --matt-green {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #0f0;
+}
+
+@property --matt-pink {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: #f0f;
 }
 
 /* Fonts */
@@ -80,7 +92,7 @@
 
 body {
     height: 100vh;
-    width: min(100% - 2rem, 1100px);
+    width: min(100% - 2rem);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 0.5rem;
@@ -99,7 +111,7 @@ body {
 
 .nature-bg {
     min-height: 100vh;
-    background-image: linear-gradient(90deg, var(--yellow-green), var(--green), var(--blue-green), var(--yellow-green),var(--green));
+    background-image: linear-gradient(90deg, var(--yellow-green), var(--green), var(--blue-green), var(--yellow-green), var(--green));
     background-size: 400%;
     animation: nature-bg 24s ease-in-out infinite;
     display: flex;
@@ -140,21 +152,25 @@ body {
 
 @keyframes bgAnimation {
 
-    0%{
-        background-position: 0%, 100%;
-    }
+    0%,
     100% {
-        background-position: 100%, 0%;
+        background-position: 0%, 50%;
+    }
+
+    50% {
+        background-position: 50%, 100%;
     }
 }
 
 @keyframes nature-bg {
 
-    0%{
-        background-position: 0%, 100%;
-    }
+    0%,
     100% {
-        background-position: 100%;
+        background-position: 0%, 50%;
+    }
+
+    100% {
+        background-position: 50%, 100%;
     }
 }
 
@@ -270,7 +286,36 @@ li {
 }
 
 .fancy {
-    color: linear-gradient(90deg, red, white)
+    background-image: linear-gradient(90deg,
+            var(--matt-green),
+            var(--matt-green),
+            var(--matt-pink),
+            var(--matt-pink),
+            white,
+            var(--matt-green),
+            var(--matt-green));
+    background-size: 600%;
+    background-position: 0% 50%;
+
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    animation: move-text-gradient 4s ease-in-out infinite;
+}
+
+@keyframes move-text-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
 }
 
 /* Buttons */
