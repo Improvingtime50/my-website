@@ -11,7 +11,7 @@ const version = packageJson.version;
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="generator" content={Astro.generator} />
-		<title>hellooo!</title>
+		<title>enjoy your stay.</title>
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -24,13 +24,12 @@ const version = packageJson.version;
 			<!-- Navigation -->
 			<header class="navigation">
 				<nav>
-					<a href="/"style="background:#142"
+					<a href="/" style="background:#142"
 						><img src="../images/pfp.png" width="25" /></a
 					>
 					<a href="#now" class="wide qilka-bold">In the Works</a>
 					<a href="#proj" class="wide qilka-bold">Projects</a>
 					<a href="#mus" class="wide qilka-bold">Music</a>
-					<a href="#img" class="wide qilka-bold">Photos</a>
 					<a href="#abt" class="wide qilka-bold">About Me</a>
 				</nav>
 			</header>
@@ -38,7 +37,7 @@ const version = packageJson.version;
 			<!-- Greetings -->
 			<header class="title">
 				<h1 class="crafteds wide" style="margin-top: 200px;">
-					Welcome to<br /><span class="fancy">THE MATT HATTAR</span>
+					Welcome to<br /><span class="fancy">m0ssyv1rus</span>
 				</h1>
 				<h2
 					class="qilka-bold wide"
@@ -60,6 +59,11 @@ const version = packageJson.version;
 				<ul class="qilka-bold" style="margin-left: 40px">
 					<li class="fancy">working on this website!</li>
 				</ul>
+				<ul class="qilka-bold" style="margin-left: 40px">
+					<li class="fancy">
+						school... junior year's kicking my ass ;-;
+					</li>
+				</ul>
 
 				<!-- Current Projects -->
 				<h3 class="xanmono container" id="proj">
@@ -70,20 +74,27 @@ const version = packageJson.version;
 				</p>
 				<ul class="qilka-bold" style="margin-left: 40px">
 					<li>this website (duh)</li>
-					<li>a game IF I ACTUALLY MADE ONE YET</li>
-
+					<li>
+						<a
+							href="https://under-the-briar.itch.io/fruits-vs-bugs-ground-zero"
+							target="_blank"
+							style="color: #484">Fruits vs. Bugs: Ground Zero</a
+						>
+					</li>
 				</ul>
 
 				<!-- Music -->
-				<h3 class="xanmono container" id="mus">orchestrated frequencies:</h3>
+				<h3 class="xanmono container" id="mus">
+					orchestrated frequencies:
+				</h3>
 				<div class="qilka-bold" style="margin-left: 20px">
 					<p>
-						all sites with my music (none published yet, but i will
-						try)
+						all sites with my music (none published yet, but when i
+						have time, some songs will be out!)
 					</p>
 					<div style="margin-left: 20px">
 						<a
-							href="https://bandcamp.com/nite_meh"
+							href="https://m0ssyv1rus.bandcamp.com"
 							target="_blank"
 							style="background:turquoise"
 						>
@@ -103,35 +114,6 @@ const version = packageJson.version;
 					</div>
 				</div>
 
-				<!-- Photos -->
-				<h3 class="xanmono container" id="img">
-					photographic... photos:
-				</h3>
-				<div class="qilka-bold" style="margin-left: 40px">
-					<p>check out my <a href="https://www.instagram.com/the.matt.hattar.photos/" target="_blank" style="color: #f4f">instagram</a> for my photography account!</p>
-					
-				</div>
-
-				<!-- Who Am I -->
-				<h3 class="xanmono container" id="abt">who the heck am i?</h3>
-				<div class="qilka-bold" style="margin-left: 40px">
-					<p style="margin-left: -20px">get to know me a little.</p>
-					<ul>
-						<li>im korean american</li>
-						<li>
-							i love games, especially undertale/deltarune,
-							minecraft, celeste, vivid/stasis, unbeatable, and more (but these are my favorites)
-						</li>
-						<li>im a huge fan of jpop, and vocaloid/synthv</li>
-						<li>
-							my favorite artists are toby fox, jamie paige, ado,
-							lena raine, lexycat, camellia, flavor foley, kessoku
-							band, eve, yorushika, and kasane teto. i like GUMI
-							Megpoid a very normal amount :P
-						</li>
-					</ul>
-				</div>
-
 				<!-- Footer -->
 				<footer class="footer" style="margin-top: 3rem">
 					<div class="footer-container">
@@ -141,10 +123,10 @@ const version = packageJson.version;
 								,
 								style="font-weight: bold"
 							>
-								Matthew Kang
+								m0ssyv1rus
 							</h3>
 							<p class="qilka-bold">
-								finding my way through the world and the
+								korean american finding my way through the world and the
 								internet
 							</p>
 						</div>
@@ -170,16 +152,6 @@ const version = packageJson.version;
 								<li>
 									<a href="#mus" style="color:var(--text)"
 										>Music</a
-									>
-								</li>
-								<li>
-									<a href="#img" style="color:var(--text)"
-										>Photos</a
-									>
-								</li>
-								<li>
-									<a href="#abt" style="color:var(--text)"
-										>About Me</a
 									>
 								</li>
 							</ul>
@@ -248,7 +220,8 @@ const version = packageJson.version;
 						</p>
 						<p class="qilka-bold">
 							Version {version}
-						<p>
+							<p></p>
+						</p>
 					</div>
 				</footer>
 			</main>
