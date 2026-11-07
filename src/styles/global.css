@@ -1,16 +1,16 @@
 /* Colors */
 :root {
-    --text: #5d7a72;
+    --text: #bfd6bf;
     --invis: #000000000;
-    --h1: rgba(93, 139, 68, 0.95);
-    --h2: rgba(48, 97, 59, 0.95);
-    --h3: rgba(44, 71, 88, 0.95);
+    --h1: rgba(105, 125, 95, 0.95);
+    --h2: rgba(157, 210, 200, 0.95);
+    --h3: rgba(157, 181, 210, 0.95);
 }
 
 @property --green {
     syntax: '<color>';
     inherits: false;
-    initial-value: #aed4a1;
+    initial-value: rgb(112, 207, 120);
 }
 
 @property --blue {
@@ -28,25 +28,25 @@
 @property --yellow-green {
     syntax: '<color>';
     inherits: false;
-    initial-value: #b4d36b;
+    initial-value: #9ad36b;
 }
 
 @property --blue-green {
     syntax: '<color>';
     inherits: false;
-    initial-value: #6bd3a8;
+    initial-value: #6bd3ca;
 }
 
 @property --matt-green {
     syntax: '<color>';
     inherits: false;
-    initial-value: #0f8;
+    initial-value: #8fc;
 }
 
-@property --matt-blue {
+@property --matt-purple {
     syntax: '<color>';
     inherits: false;
-    initial-value: #08f;
+    initial-value: #f8c;
 }
 
 /* Fonts */
@@ -91,8 +91,8 @@
 }
 
 body {
-    height: 100vh;
-    width: min(100% - 2rem);
+    min-height: 100vh;
+    width: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 0.5rem;
@@ -102,7 +102,7 @@ body {
 /* Back Background */
 .background {
     min-height: 100vh;
-    background-image: linear-gradient(90deg, var(--green), var(--blue), var(--purple), var(--green), var(--blue));
+    background-image: repeating-linear-gradient(90deg, var(--green), var(--blue), var(--purple), var(--blue), var(--green));
     background-size: 400%;
     animation: bgAnimation 24s ease-in-out infinite;
     display: flex;
@@ -111,9 +111,12 @@ body {
 
 .nature-bg {
     min-height: 100vh;
-    background-image: linear-gradient(90deg, var(--yellow-green), var(--green), var(--blue-green), var(--yellow-green), var(--green));
-    background-size: 400%;
-    animation: nature-bg 24s ease-in-out infinite;
+    background-image: linear-gradient(90deg,
+            var(--yellow-green),
+            var(--green),
+            var(--blue-green));
+    background-size: 800%;
+    animation: nature-bg 24s ease-in-out infinite alternate;
     display: flex;
     flex-direction: column;
 }
@@ -128,7 +131,7 @@ body {
     position: fixed;
     flex-grow: 1;
     padding: 1rem 2rem;
-    background: #000a;
+    background: #444a;
     border-radius: 0 0 24px 24px;
     display: flex;
     flex-direction: column;
@@ -137,7 +140,7 @@ body {
 .main-content {
     flex-grow: 1;
     padding: 2rem 3rem;
-    background: #0008;
+    background: #4448;
     border-radius: 24px 24px 0 0;
     display: flex;
     flex-direction: column;
@@ -145,8 +148,8 @@ body {
 }
 
 .container {
-    border-top: 2px solid #142;
-    border-bottom: 2px solid #142;
+    border-top: 2px solid #adc;
+    border-bottom: 2px solid #adc;
     padding: 10px
 }
 
@@ -163,14 +166,12 @@ body {
 }
 
 @keyframes nature-bg {
-
-    0%,
-    100% {
-        background-position: 0%, 50%;
+    0% {
+        background-position: 0% 50%;
     }
 
     100% {
-        background-position: 50%, 100%;
+        background-position: 100% 50%;
     }
 }
 
@@ -178,7 +179,7 @@ body {
 
 /* Base Footer Styling */
 .footer {
-    background-color: #000a;
+    background-color: #444a;
     color: var(--text);
     padding: 20px 30px 20px 30px;
     border-radius: 20px;
@@ -287,13 +288,12 @@ li {
 
 .fancy {
     background-image: linear-gradient(90deg,
+            var(--matt-purple),
+            var(--matt-purple),
             var(--matt-green),
             var(--matt-green),
-            var(--matt-blue),
-            var(--matt-blue),
-            white,
-            var(--matt-green),
-            var(--matt-green));
+            var(--matt-purple),
+            var(--matt-purple));
     background-size: 600%;
     background-position: 0% 50%;
 
@@ -301,7 +301,7 @@ li {
     background-clip: text;
     -webkit-background-clip: text;
 
-    animation: move-text-gradient 4s ease-in-out infinite;
+    animation: move-text-gradient 24s ease-in-out infinite;
 }
 
 @keyframes move-text-gradient {
@@ -320,11 +320,11 @@ li {
 
 /* Buttons */
 .btn,
-a {
+.a-btn {
     display: inline-block;
-    margin: 0.5rem;
+    margin: 0.3rem;
     padding: 1rem;
-    background: #ffffffb0;
+    background: #9994;
     color: var(--text);
     border-radius: 8px;
     text-decoration: none;

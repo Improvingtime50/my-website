@@ -9,7 +9,7 @@ const version = packageJson.version;
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
 		<title>enjoy your stay.</title>
 		<link
@@ -20,31 +20,31 @@ const version = packageJson.version;
 	</head>
 	<!-- Main Page -->
 	<body>
-		<div class="background">
+		<div class="nature-bg">
 			<!-- Navigation -->
-			<header class="navigation">
+			<header class="navigation" style="width: 100%">
 				<nav>
-					<a href="/" style="background:#031"
+					<a href="/" style="background:#010" class="a-btn"
 						><img src="../images/pfp.png" width="25" /></a
 					>
-					<a href="#now" class="wide qilka-bold">In the Works</a>
-					<a href="#proj" class="wide qilka-bold">Projects</a>
-					<a href="#mus" class="wide qilka-bold">Music</a>
-					<a href="#abt" class="wide qilka-bold">About Me</a>
+					<a href="#now" class="wide qilka-bold a-btn">In the Works</a
+					>
+					<a href="#proj" class="wide qilka-bold a-btn">Projects</a>
+					<a href="#mus" class="wide qilka-bold a-btn">Music</a>
 				</nav>
 			</header>
 
 			<!-- Greetings -->
 			<header class="title">
-				<h1 class="crafteds wide" style="margin-top: 200px;">
+				<h1 class="crafteds wide" style="margin-top: 150px;">
 					Welcome to<br /><span class="fancy">m0ssyv1rus</span>
 				</h1>
 				<h2
 					class="qilka-bold wide"
 					style="margin-top: 2rem; font-size: 20px"
 				>
-					hosted by <span style="color:#142"
-						>yours truly (>vO)&deg;</span
+					<span style="color:#142">
+						hosted by yours truly (>vO)&deg;</span
 					>
 				</h2>
 			</header>
@@ -52,35 +52,27 @@ const version = packageJson.version;
 			<!-- --Content-- -->
 			<main class="main-content">
 				<!-- Now -->
-				<h3 class="xanmono container" id="now">now! now! now!</h3>
-				<p class="qilka-bold" style="margin-left: 20px">
-					this is where i update you all on what im working on.
-				</p>
+				<h3 class="xanmono container" id="now">what's happening in this very microinstance:</h3>
 				<ul class="qilka-bold" style="margin-left: 40px">
 					<li class="fancy">working on this website!</li>
 				</ul>
 				<ul class="qilka-bold" style="margin-left: 40px">
-					<li class="fancy">
+					<li>
 						school... junior year's kicking my ass ;-;
 					</li>
 				</ul>
 
 				<!-- Current Projects -->
 				<h3 class="xanmono container" id="proj">
-					digital amalgamations:
+					digital concoctions:
 				</h3>
-				<p class="qilka-bold" style="margin-left: 20px">
-					this is where i show off my online projects.
-				</p>
 				<ul class="qilka-bold" style="margin-left: 40px">
-					<p>this website (duh)</p>
-					<p>
-						<a
-							href="https://under-the-briar.itch.io/fruits-vs-bugs-ground-zero"
-							target="_blank"
-							style="color: #484">Fruits vs. Bugs: Ground Zero</a
-						>
-					</p>
+					<a
+						href="https://under-the-briar.itch.io/fruits-vs-bugs-ground-zero"
+						target="_blank"
+						style="color: #5c6"
+						class="a-btn">Fruits vs. Bugs: Ground Zero</a
+					>
 				</ul>
 
 				<!-- Music -->
@@ -89,14 +81,16 @@ const version = packageJson.version;
 				</h3>
 				<div class="qilka-bold" style="margin-left: 20px">
 					<p>
-						all sites with my music (none published yet, but when i
-						have time, some songs will be out!)
+						(note: no music published yet, but when i have time, i
+						will start working on some songs)
 					</p>
+					<br />
 					<div style="margin-left: 20px">
 						<a
 							href="https://m0ssyv1rus.bandcamp.com"
 							target="_blank"
 							style="background:turquoise"
+							class="a-btn"
 						>
 							<i
 								class="fa-brands fa-bandcamp"
@@ -106,6 +100,7 @@ const version = packageJson.version;
 							href="https://soundcloud.com/the-matt-hattar"
 							target="_blank"
 							style="background:orangered"
+							class="a-btn"
 						>
 							<i
 								class="fa-brands fa-soundcloud"
