@@ -15,7 +15,7 @@ def build_version(major_update: int, minor_update: int) -> str:
     local_date = date.today()
     date_section = local_date.strftime("%Y%m%d")
 
-    return f"1.{major_update}.{minor_update}.{date_section}"
+    return f"{major_update}.{minor_update}.{date_section}"
 
 
 def update_package_json(package_json_path: Path, version: str) -> None:
