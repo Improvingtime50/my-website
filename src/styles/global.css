@@ -1,6 +1,6 @@
 /* Colors */
 :root {
-    --text: #bfd6bf;
+    --text: #d4e5d4;
     --invis: #000000000;
     --h1: rgba(105, 125, 95, 0.95);
     --h2: rgba(157, 210, 200, 0.95);
@@ -81,6 +81,17 @@
 
 .xanmono {
     font-family: "Xanmono Regular", sans-serif;
+}
+
+@font-face {
+    font-family: "Orange Avenue";
+    src: url("/fonts/orange-avenue-demo.regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.orange-avenue {
+    font-family: "Orange Avenue", sans-serif;
 }
 
 /* Background */
